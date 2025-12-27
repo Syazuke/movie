@@ -46,7 +46,7 @@ function showMovies(movies) {
         `<img src="${API_IMAGE_URL + poster_path}" alt="html the movie images" />
         <div class=""detail>
             <h3>${title}</h3>
-            <p>${overview.substring(0, 200)}...</p>
+            <p>${overview.substring(0, 100)}...</p>
         </div>
         `
         moviesElement.appendChild(movieCard)
@@ -65,5 +65,6 @@ searchForm.addEventListener("submit", (event) => {
 title.addEventListener("click", () => {
     location.reload()
 })
+
 
 updatePage()
